@@ -33,6 +33,12 @@ https://github.com/vimeo/psalm
 ./vendor/bin/psalm --issues=all
 ```
 
+### Phan
+
+https://github.com/phan/phan
+
+```
+./vendor/bin/phan --allow-polyfill-parser
 ```
 
 ## DI
@@ -47,4 +53,7 @@ https://php-di.org/doc/getting-started.html
 [みんなの PHP 　現場で役立つ最新ノウハウ！](https://www.amazon.co.jp/dp/B08238P624/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1)
 
 [Composer のパッケージを作成して公開するまで](https://tech.innovator.jp.net/entry/2018/12/03/184847)
+
+```
+
 ```
