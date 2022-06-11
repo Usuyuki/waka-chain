@@ -1,2 +1,5 @@
 /vendor/
+# /vendor-bin/
+/tools/
 /composer.lock
+*.cache
