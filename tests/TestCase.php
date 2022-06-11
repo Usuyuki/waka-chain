@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace usuyuki\WakaChain;
+namespace Usuyuki\WakaChain;
 
 /**
  * 抽象テストケース
