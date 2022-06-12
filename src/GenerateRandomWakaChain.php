@@ -4,26 +4,25 @@ declare(strict_types=1);
 
 namespace Usuyuki\WakaChain;
 
-use Usuyuki\WakaChain\WakaInterface;
-use Usuyuki\WakaChain\Ogura100;
+use Usuyuki\WakaChain\Repository\Ogura100;
 use Usuyuki\WakaChain\WakaChainInterface;
+use Usuyuki\WakaChain\Repository\Waka;
+use Usuyuki\WakaChain\WakaChain;
 
 /**
  * ランダムに和歌チェーンを生成する
  */
-class GenerateRandomWakaChain implements WakaChainInterface
+class GenerateRandomWakaChain
 {
-    public function __construct(
-        private Ogura100 $ogura100,
-    ) {
-    }
-
     /**
      * 小倉百人一首に含まれる和歌を生成
      *
      */
-    public function FromOgura100(): WakaInterface
+    public function FromOgura100(): WakaChain
     {
-        return $this->ogura100;
+        $waka = new Ogura100();
+        // calculateNumberOfWakaが0だと困るので一様の2項演算
+        $id = random_int(0, ($waka->calculateNumberOfWaka() ?? 1) - 1);
+        return new WakaChain($id, $waka);
     }
 }
