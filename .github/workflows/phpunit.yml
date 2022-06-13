@@ -1,0 +1,34 @@
+# @format
+
+# https://qiita.com/blue32a/items/0661d70216051ad6552d
+name: PHPUnitTest
+
+on: [pull_request]
+
+jobs:
+  test:
+    name: Test
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        php-version: ["8.1.1", "8.1.7"]
+
+    steps:
+      - name: Setup PHP ${{ matrix.php-version }}
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-version }}
+
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Validate composer.json and composer.lock
+        run: composer validate
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-progress --no-suggest
+
+      - name: Run test suite
+        run: composer run-script test
