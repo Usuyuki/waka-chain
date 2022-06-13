@@ -1,7 +1,7 @@
 # @format
 
 # 大枠
-git:
+📈git:
   - .github/ISSUE_TEMPLATE/*
   - .github/pull_request_template.md
   - .gitignore
