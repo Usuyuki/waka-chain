@@ -10,3 +10,4 @@
 /tests              export-ignore
 /README.md          export-ignore
 /DEVELOPMENT.md     export-ignore
+/.github            export-ignore
