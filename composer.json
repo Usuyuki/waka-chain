@@ -3,6 +3,9 @@
   "description": "A library for creating temporary password-like by waka.",
   "type": "library",
   "license": "MIT",
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
   "autoload": {
     "psr-4": {
       "Usuyuki\\WakaChain\\": "src/"
