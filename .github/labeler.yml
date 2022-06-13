@@ -1,0 +1,21 @@
+# @format
+
+# 大枠
+git:
+  - .github/ISSUE_TEMPLATE/*
+  - .github/pull_request_template.md
+  - .gitignore
+  - .gitattributes
+⚡ci:
+  - .github/workflows/*
+  - .github/labeler.yml
+🎵composer:
+  - composer.json
+🏠src:
+  - src/*
+📄docs:
+  - README.md
+  - DEVELOPMENT.md
+  - LICENSE
+🧪tests:
+  - tests/*
