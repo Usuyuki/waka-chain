@@ -10,8 +10,8 @@ namespace Usuyuki\WakaChain\Repository\Waka;
  */
 class Waka
 {
-    /** @var wakaArray */
-    protected $waka = [
+    /** @phpstan-var wakaArray */
+    protected array $waka = [
         [
             'JaCC' => ['', '', '', '', ''],
             'JaKana' => ['', '', '', '', ''],
