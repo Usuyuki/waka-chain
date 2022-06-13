@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Usuyuki\WakaChain\Repository;
+namespace Usuyuki\WakaChain\Repository\Waka;
 
-use Usuyuki\WakaChain\Repository\Waka;
+use Usuyuki\WakaChain\Repository\Waka\Waka;
 
 /**
  * 小倉百人一首のリポジトリ
