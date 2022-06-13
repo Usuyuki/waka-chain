@@ -11,3 +11,4 @@
 /README.md          export-ignore
 /DEVELOPMENT.md     export-ignore
 /.github            export-ignore
+/.vscode            export-ignore
