@@ -3,3 +3,4 @@
 /tools/
 /composer.lock
 *.cache
+originalData/csv/
