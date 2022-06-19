@@ -11,6 +11,7 @@
 ## CI
 
 [![PHPUnitTest](https://github.com/Usuyuki/waka-chain/actions/workflows/phpunit.yml/badge.svg)](https://github.com/Usuyuki/waka-chain/actions/workflows/phpunit.yml)
+[![PHPStanStaticCodeAnalysis](https://github.com/Usuyuki/waka-chain/actions/workflows/phpstan.yml/badge.svg)](https://github.com/Usuyuki/waka-chain/actions/workflows/phpstan.yml)
 [![PR自動ラベル付与](https://github.com/Usuyuki/waka-chain/actions/workflows/label.yml/badge.svg)](https://github.com/Usuyuki/waka-chain/actions/workflows/label.yml)
 
 # install
