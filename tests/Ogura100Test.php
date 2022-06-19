@@ -41,10 +41,12 @@ class Ogura100Test extends TestCase
              */
             foreach ($waka['JaCC'] as $ku) {
                 //漢字またはひらがなの文字列になっているか（空白など無いか）
+                echo 'asserting:' . $ku . "\n";
                 $this->assertMatchesRegularExpression('/(\p{Han}|\p{Hiragana})+/u', $ku);
             }
             foreach ($waka['JaKana'] as $ku) {
                 //ひらがなのみの文字列になっているか（空白など無いか）
+                echo 'asserting:' . $ku . "\n";
                 $this->assertMatchesRegularExpression('/\p{Hiragana}{4,6}/u', $ku);
             }
         }

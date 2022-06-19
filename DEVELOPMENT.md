@@ -1,5 +1,11 @@
 <!-- @format -->
 
+## お試し実行
+
+```
+php examples/index.php
+```
+
 ## csv から配列ライクな文字列に変換
 
 ```
@@ -68,3 +74,7 @@ https://php-di.org/doc/getting-started.html
 
 小倉百人一首  
 https://linkdata.org/work/rdf1s6834i/ideas
+
+## バージョンの付け方
+
+[セマンティック バージョニング 2.0.0](https://semver.org/lang/ja/)を採用
