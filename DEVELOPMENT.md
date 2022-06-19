@@ -28,7 +28,7 @@ https://phpunit.de/getting-started/phpunit-9.html
 https://phpstan.org/user-guide/getting-started
 
 ```
-./vendor/bin/phpstan analyse src tests converter
+./vendor/bin/phpstan analyse
 ```
 
 ### Psalm
