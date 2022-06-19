@@ -16,12 +16,14 @@ class Ogura100Test extends TestCase
     /** @test */
     public function 小倉百人一首がWakaクラスか(): void
     {
+        /** @param  */
         $subject = new Ogura100();
         $this->assertInstanceOf(Waka::class, $subject);
     }
     /** @test */
     public function 小倉百人一首の配列が適切なものか(): void
     {
+        /** @var string $subject */
         $subject = new Ogura100();
         $wakaArray = $subject->getWakaArray();
 
