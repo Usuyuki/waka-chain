@@ -1,5 +1,11 @@
 <!-- @format -->
 
+## csv から配列ライクな文字列に変換
+
+```
+php converter/convert-csv-to-txt.php
+```
+
 ## テスト
 
 PHPUnit  
@@ -57,3 +63,8 @@ https://php-di.org/doc/getting-started.html
 ```
 
 ```
+
+## 和歌データ
+
+小倉百人一首  
+https://linkdata.org/work/rdf1s6834i/ideas
