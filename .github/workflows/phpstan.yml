@@ -36,4 +36,4 @@ jobs:
       - name: Install PHPStan
         run: composer bin phpstan require phpstan/phpstan phpstan/extension-installer
       - name: Check with PHPStan
-        run: vendor/bin/phpstan --configuration=phpstan.neon
+        run: vendor/bin/phpstan --configuration=phpstan.neon --error-format=github
